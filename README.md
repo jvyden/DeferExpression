@@ -23,3 +23,18 @@ Hello, World!
 2
 1
 ```
+
+Or you can use the stack version for the same result:
+```csharp
+    public static void Main()
+    {
+        using DeferStack stack = new(capacity: 5);
+        
+        stack.Defer(() => Console.WriteLine("1"));
+        stack.Defer(() => Console.WriteLine("2"));
+        stack.Defer(() => Console.WriteLine("3"));
+        stack.Defer(() => Console.WriteLine("4"));
+        Console.WriteLine("Hello, World!");
+        stack.Defer(() => Console.WriteLine("5"));
+    }
+```

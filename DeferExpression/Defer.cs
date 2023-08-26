@@ -1,6 +1,6 @@
 ﻿namespace DeferExpression;
 
-public class Defer : IDisposable
+public struct Defer : IDisposable
 {
     private bool _alreadyRan;
     private readonly Action _action;
@@ -13,11 +13,9 @@ public class Defer : IDisposable
     public void Dispose()
     {
         // prevent accidental double run
-        if (!_alreadyRan)
-        {
-            _action.Invoke();
-            _alreadyRan = true;
-        }
-        GC.SuppressFinalize(this);
+        if (_alreadyRan) return;
+        _alreadyRan = true;
+        
+        _action.Invoke();
     }
 }
