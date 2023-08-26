@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeferExpression", "DeferExpression\DeferExpression.csproj", "{D526B9EE-7874-4C91-BA97-882FD085B7BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeferExpression.Example", "DeferExpression.Example\DeferExpression.Example.csproj", "{83701E5D-9D32-46FF-83E5-80C81C7FA7E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D526B9EE-7874-4C91-BA97-882FD085B7BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D526B9EE-7874-4C91-BA97-882FD085B7BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D526B9EE-7874-4C91-BA97-882FD085B7BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D526B9EE-7874-4C91-BA97-882FD085B7BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83701E5D-9D32-46FF-83E5-80C81C7FA7E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83701E5D-9D32-46FF-83E5-80C81C7FA7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83701E5D-9D32-46FF-83E5-80C81C7FA7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83701E5D-9D32-46FF-83E5-80C81C7FA7E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
