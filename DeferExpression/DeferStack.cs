@@ -30,6 +30,6 @@ public struct DeferStack : IDisposable
         {
             action.Invoke();
         }
-
+        this._actions.Clear();
     }
 }
