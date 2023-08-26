@@ -2,6 +2,7 @@
 
 public class Defer : IDisposable
 {
+    private bool _alreadyRan;
     private readonly Action _action;
     
     public Defer(Action action)
@@ -11,7 +12,12 @@ public class Defer : IDisposable
 
     public void Dispose()
     {
-        _action.Invoke();
+        // prevent accidental double run
+        if (!_alreadyRan)
+        {
+            _action.Invoke();
+            _alreadyRan = true;
+        }
         GC.SuppressFinalize(this);
     }
 }
